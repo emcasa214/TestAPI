@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Xe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Thanh tìm kiếm -->
+        <div class="mb-6 flex gap-4">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Tìm kiếm..."
+                class="px-4 py-2 border rounded flex-1"
+            >
+            <button 
+                id="searchButton"
+                class="bg-blue-500 text-white px-6 py-2 rounded"
+            >
+                Tìm kiếm
+            </button>
+        </div>
+
+        <!-- Bảng dòng xe -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Danh sách dòng xe</h2>
+            <div id="carTable" class="bg-white rounded shadow"></div>
+        </div>
+
+        <!-- Bảng phiên bản xe -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Phiên bản xe</h2>
+            <div id="versionTable" class="bg-white rounded shadow"></div>
+        </div>
+
+        <!-- Bảng ngân hàng -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Danh sách ngân hàng</h2>
+            <div id="bankTable" class="bg-white rounded shadow"></div>
+        </div>
+
+        <!-- Phân trang -->
+        <div class="flex justify-center gap-4 mt-6">
+            <button 
+                id="paginationPrev"
+                class="px-4 py-2 bg-gray-200 rounded"
+            >
+                Trước
+            </button>
+            <span 
+                id="paginationCurrent"
+                class="px-4 py-2"
+            >1</span>
+            <button 
+                id="paginationNext"
+                class="px-4 py-2 bg-gray-200 rounded"
+            >
+                Sau
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
